@@ -1,0 +1,91 @@
+# ============================================================
+#  Vajra-Dominators — .gitignore
+# ============================================================
+
+# ----------------------------------------------------------
+# Python virtual environment
+# ----------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ----------------------------------------------------------
+# Dataset — LEVIR-CD and any large data folders
+# Do NOT commit licensed academic datasets to GitHub.
+# Link to the official download page in README.md instead.
+# ----------------------------------------------------------
+Dataset-Bitemporal/
+data/
+datasets/
+*.zip
+*.tar.gz
+*.tar
+
+# ----------------------------------------------------------
+# Model weights / checkpoints (large binary files)
+# Use Git LFS, Hugging Face Hub, or Kaggle Datasets instead.
+# ----------------------------------------------------------
+training_output/
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.pkl
+
+# ----------------------------------------------------------
+# Python bytecode & caches
+# ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# ----------------------------------------------------------
+# Jupyter Notebook artifacts
+# ----------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ----------------------------------------------------------
+# Logs and temporary output files
+# ----------------------------------------------------------
+logs/
+*.log
+wandb/
+runs/
+mlruns/
+outputs/
+results/
+
+# ----------------------------------------------------------
+# Editor / IDE files
+# ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----------------------------------------------------------
+# OS-generated files
+# ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------------------------------
+# Secrets / credentials — NEVER commit these
+# ----------------------------------------------------------
+.env
+*.env
+kaggle.json
+secrets.*
+credentials.*
